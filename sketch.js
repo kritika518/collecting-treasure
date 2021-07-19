@@ -73,7 +73,12 @@ function draw() {
       
     }else{
       if(swordGroup.isTouching(boy)) {
-
+        gameState=END;
+        boy.Animation("SahilRunning",endImg);
+        boy.x=200;
+        boy.y=300;
+        cashG.destroyEach();
+        cashG.setVelocityYEach(0);
     }
 }
 
